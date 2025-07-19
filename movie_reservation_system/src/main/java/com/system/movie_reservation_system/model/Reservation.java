@@ -1,5 +1,4 @@
-package com.system.movie_resevation_system.model;
-
+package com.system.movie_reservation_system.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,8 +14,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "reservations")
 public class Reservation {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne

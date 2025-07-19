@@ -1,10 +1,10 @@
-package com.system.movie_resevation_system;
+package com.system.movie_reservation_system;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovieResevationSystemApplicationTests {
+class MovieReservationSystemApplicationTests {
 
 	@Test
 	void contextLoads() {

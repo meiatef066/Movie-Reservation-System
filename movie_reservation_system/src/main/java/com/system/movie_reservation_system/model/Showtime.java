@@ -1,4 +1,4 @@
-package com.system.movie_resevation_system.model;
+package com.system.movie_reservation_system.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

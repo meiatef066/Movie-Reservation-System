@@ -1,4 +1,5 @@
-package com.system.movie_resevation_system.model;
+package com.system.movie_reservation_system.model;
+
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "seats", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"hall_id", "row","column", "seat_number"})
+        @UniqueConstraint(columnNames = {"hall_id", "row", "seat_number"})
 })
 public class Seat {
     @Id
@@ -21,8 +22,9 @@ public class Seat {
 
     @Column(name = "seat_number")
     private int seatNumber;
-
+    @Column(name = "seat_column")
     private Integer column;
+    @Column(name = "seat_row")
     private Integer row;
 
     @Enumerated(EnumType.STRING)

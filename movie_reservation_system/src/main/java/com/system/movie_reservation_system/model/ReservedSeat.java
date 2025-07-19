@@ -1,19 +1,19 @@
-package com.system.movie_resevation_system.model;
+package com.system.movie_reservation_system.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
 
 @Getter
 @Setter
 @Entity
 @Table(name = "reserved_seats",
         uniqueConstraints = {
-                @UniqueConstraint(columnNames = {"seat_id", "showtime_id"})
-        })
+        @UniqueConstraint(columnNames = {"seat_id", "showtime_id"})
+})
 public class ReservedSeat {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
@@ -27,4 +27,6 @@ public class ReservedSeat {
     @ManyToOne
     @JoinColumn(name = "showtime_id")
     private Showtime showtime;
+
+
 }

@@ -1,4 +1,4 @@
-package com.system.movie_resevation_system.model;
+package com.system.movie_reservation_system.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -23,7 +23,7 @@ public class Hall {
     private Integer TotalRows;
     private Integer TotalColumns;
 
-    @OneToMany(mappedBy = "halls")
+    @OneToMany(mappedBy = "hall")
     private List<Seat> seats;
 
     @OneToMany(mappedBy = "hall")

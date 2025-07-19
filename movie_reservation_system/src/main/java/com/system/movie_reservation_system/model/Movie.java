@@ -1,4 +1,5 @@
-package com.system.movie_resevation_system.model;
+package com.system.movie_reservation_system.model;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "movies")
+@Table(name = "movie")
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,8 +22,9 @@ public class Movie {
 
     private String title;
 
-    @Column(length = 2000)
+    @Column(length = 1000)
     private String description;
+
     @Column(name = "image_url")
     private String imageUrl;
 

@@ -1,13 +1,13 @@
-package com.system.movie_resevation_system;
+package com.system.movie_reservation_system;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MovieResevationSystemApplication {
+public class MovieReservationSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MovieResevationSystemApplication.class, args);
+		SpringApplication.run(MovieReservationSystemApplication.class, args);
 	}
 
 }
