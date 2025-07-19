@@ -73,8 +73,4 @@ public class AuthController {
         return ResponseEntity.status(response.getStatusCode())
                 .body(response);
     }
-    @GetMapping
-    public String hellow(){
-        return "hello";
-    }
 }
