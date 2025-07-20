@@ -24,6 +24,6 @@ public class UserController {
         }
         user.get().setRole(User.Role.ADMIN);
         userRepository.save(user.get());
-        return ResponseEntity.ok().build();
+        return ResponseEntity.status(200).body("user Id :"+user.get().getId()+" "+user.get().getEmail()+" is promoted to admin 👍");
     }
 }
