@@ -51,7 +51,7 @@ flowchart TD
 ### Setup
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/meiatef066/Movie-Reservation-System.git
+   git clone <repo url>
    cd Movie-Reservation-system
    ```
 2. **Configure the database:**
