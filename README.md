@@ -3,7 +3,28 @@
 A full-featured Movie Reservation System built with Java, Spring Boot, and JPA. This application allows users to browse movies, view showtimes, reserve seats, and manage reservations. Admin users can manage movies, halls, showtimes, and seats.
 
 ---
+## Use Case Diagram
 
+```mermaid
+flowchart LR
+  User([User])
+  Admin([Admin])
+
+  User --> RegisterLogin([Register/Login])
+  User --> BrowseMovies([Browse Movies])
+  User --> SearchShowtimes([Search Showtimes])
+  User --> ReserveSeats([Reserve Seats])
+  User --> ViewReservations([View Reservations])
+  User --> CancelReservation([Cancel Reservation])
+
+  Admin --> MovieMgmt([Add/Edit/Delete Movie])
+  Admin --> HallMgmt([Add/Edit/Delete Hall])
+  Admin --> ShowtimeMgmt([Add/Edit/Delete Showtime])
+  Admin --> ConfigureSeats([Configure Seats])
+  Admin --> ViewAllReservations([View All Reservations])
+  Admin --> PromoteUser([Promote User])
+```
+---
 ## System Architecture Diagram
 
 ```mermaid
