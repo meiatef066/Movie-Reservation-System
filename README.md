@@ -16,7 +16,6 @@ flowchart TD
     Service["Services"]
     Repo["Repositories (JPA)"]
     DB[("Database (MySQL)")]
-
     User --> FE
     FE -->|HTTP/JSON| API
     API --> Auth
@@ -38,9 +37,9 @@ flowchart TD
 
 ## Tech Stack
 - **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA
-- **Database:** MySQL 
+- **Database:** MySQL (or compatible RDBMS)
 - **Build Tool:** Maven
-
+- **API Docs:** Swagger/OpenAPI
 
 ## Getting Started
 
@@ -52,11 +51,11 @@ flowchart TD
 ### Setup
 1. **Clone the repository:**
    ```bash
-   git clone <repo URL>
-   cd Movie-Reservation-system/movie_reservation_system
+   git clone https://github.com/meiatef066/Movie-Reservation-System.git
+   cd Movie-Reservation-system
    ```
 2. **Configure the database:**
-   - Edit `src/main/resources/application.properties` with your DB credentials.
+   - Edit `movie_reservation_system/src/main/resources/application.properties` with your DB credentials.
 3. **Build the project:**
    ```bash
    mvn clean install
@@ -69,13 +68,9 @@ flowchart TD
    - Swagger UI: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ## API Overview
-- **Authentication:** `/api/auth/*`
-- **Movies:** `/api/admin/movies/*` (admin), `/api/public/movies/*` (public)
-- **Halls:** `/api/admin/halls/*` (admin)
-- **Showtimes:** `/api/admin/showtimes/*` (admin), `/api/public/showtimes/*` (public)
-- **Reservations:** `/api/user/reservations/*` (user)
-- **Seats:** `/api/admin/seats/*` (admin)
-
+- For a full list of endpoints, request/response examples, and authentication details, see:
+  - [API Documentation](API_DOCUMENTATION.md)
+  - [API Response Formats](API%20Response/API_RESPONSES.md)
 
 ## Database Design
 - **Entity Relationship Diagram:** See [`Documentation/ERD.png`](Documentation/ERD.png)
@@ -89,8 +84,5 @@ flowchart TD
 ## Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-[MIT](LICENSE) 
-
 ## Contact
-For questions or support, please contact [maiatef066@gmail.com](/4z3581FNS9um6-e1IaqaJQ). 
+For questions or support, please contact [maiatef066@gmail.com]. 
