@@ -3,7 +3,6 @@
 A full-featured Movie Reservation System built with Java, Spring Boot, and JPA. This application allows users to browse movies, view showtimes, reserve seats, and manage reservations. Admin users can manage movies, halls, showtimes, and seats.
 
 ### challange from [https://roadmap.sh/projects/movie-reservation-system].
-### project url: [https://github.com/meiatef066/Movie-Reservation-System].
 ---
 ## Use Case Diagram
 
@@ -74,7 +73,7 @@ flowchart TD
 ### Setup
 1. **Clone the repository:**
    ```bash
-   git clone <repo url>
+   git clone https://github.com/meiatef066/Movie-Reservation-System
    cd Movie-Reservation-system
    ```
 2. **Configure the database:**
